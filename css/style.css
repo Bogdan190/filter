@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.card__img{
+  height: 200px;
+  width: 300px;
+}
+
+.wrapper {
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.search {
+}
+.search input, .search  button{
+  height: 50px;
+  padding: 8px 16x;
+  font-size: 20px;
+  margin-right: 16px;
+}
+.search  button {
+  margin-right: 0px;
+}
+.search input{
+  min-width: 400px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  margin-top: 16px;
+}
+.filters fieldset{
+  padding: 2px 8px 6px;
+}
+.filters legend{
+  font-size: 14px;
+  color: #777;
+}
+.filter {
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+}
+
+.content {
+  padding-top: 32px;
+}
+.title{
+  text-align: center;
+  margin-bottom: 32px;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,300px);
+  grid-gap: 16px;
+  justify-content: center;
+}
+/* Card */
+.card {
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.card__img {
+}
+.card__content{
+  padding-top: 16px;
+  padding: 16px;
+}
+.card_title {
+}
+.card__description {
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.card__info {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 8px;
+}
+.card label{
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+}
+.card__params label{
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+}
+.card__footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.card__count div{
+ 
+}
+.card__count_empty{
+  color: red;
+}
+.card__cost{
+  text-align: right;
+}
+.card__cost div{
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  padding-right: 30px;
+}
+.card__cost div::after{
+  content: "грн";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  font-weight: 300;
+  font-size: 0.8em;
+}
